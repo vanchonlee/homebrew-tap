@@ -1,6 +1,6 @@
 cask "krust" do
-  version "1.0"
-  sha256 "4f2b08fbf44e4155ddd1dd28b693a2bafbcc7361a375f31e189ad5befad98850"
+  version "1.0.1"
+  sha256 "1a3225713f460e34eebb769bfd238bb8e45c9db417092162d3a063f48ca94d1a"
 
   url "https://github.com/SlarOps/homebrew-tap/releases/download/v#{version}/krust-#{version}.dmg",
       verified: "github.com/SlarOps/homebrew-tap/"
@@ -8,7 +8,7 @@ cask "krust" do
   desc "Native Kubernetes IDE for macOS — built with Rust and Swift"
   homepage "https://github.com/SlarOps/homebrew-tap"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: ">= :sequoia"
 
   app "krust.app"
 

@@ -6,11 +6,22 @@
         <description>Krust — Native Kubernetes IDE for macOS</description>
         <language>en</language>
         <item>
+            <title>Version 1.0.1</title>
+            <pubDate>Wed, 11 Mar 2026 16:11:15 +0700</pubDate>
+            <sparkle:version>202603111608</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.0.1/krust-1.0.1.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="93fxEd+1cZX6IPd0pTVhoiYaFEmCuV/RfeR25Z/M8r+xVb69wofqus8ZyJFAPydg01ohYml/gmnArU/6w1uJCw=="
+                       length="17492899" />
+        </item>
+        <item>
             <title>Version 1.0</title>
             <pubDate>Wed, 11 Mar 2026 15:39:57 +0700</pubDate>
             <sparkle:version>202603111537</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.0/krust-1.0.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="G+2HciVy/a8LAowcKK0/+B7Q6E640AARu8caZdveaqDBWx0FmRV9qeAYBoA0kerl7Ok5eQSVlsD0CzU+MqAyCg=="
