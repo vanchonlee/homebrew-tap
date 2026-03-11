@@ -27,5 +27,16 @@
                        sparkle:edSignature="G+2HciVy/a8LAowcKK0/+B7Q6E640AARu8caZdveaqDBWx0FmRV9qeAYBoA0kerl7Ok5eQSVlsD0CzU+MqAyCg=="
                        length="17492850" />
         </item>
+        <item>
+            <title>Version 1.0.2</title>
+            <pubDate>Wed, 11 Mar 2026 21:29:50 +0700</pubDate>
+            <sparkle:version>202603112126</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.0.2/krust-1.0.2.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="oSuHYUF+rGLrFxW6BKtzLQQsGsi1P0c6I+dAG3uAbMaxrwHdWJTa/c6UKGhwytAIuVnp6JMIrJtHwkIEEPUDAQ=="
+                       length="17471825" />
+        </item>
     </channel>
 </rss>
