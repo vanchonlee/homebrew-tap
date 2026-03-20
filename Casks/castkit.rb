@@ -1,6 +1,6 @@
 cask "castkit" do
   version "1.0.0"
-  sha256 "PLACEHOLDER_SHA256"
+  sha256 "d501fa3216de33cc4436612c86c5dd611eac83f5f694995fe641b327568b733c"
 
   url "https://github.com/SlarOps/castkit/releases/download/v#{version}/CastKit-#{version}.dmg",
       verified: "github.com/SlarOps/castkit/"
