@@ -5,13 +5,13 @@ Official [Homebrew](https://brew.sh) tap for **[Krust](https://krust.io)** — a
 ## Install
 
 ```bash
-brew install slarops/tap/krust
+brew install vanchonlee/tap/krust
 ```
 
 ## Update
 
 ```bash
-brew upgrade slarops/tap/krust
+brew upgrade vanchonlee/tap/krust
 ```
 
 Krust also checks for updates automatically via Sparkle (daily).
@@ -45,4 +45,4 @@ brew uninstall krust
 
 - [Website](https://krust.io)
 - [Documentation](https://krust.io/docs)
-- [Releases](https://github.com/SlarOps/homebrew-tap/releases)
+- [Releases](https://github.com/vanchonlee/homebrew-tap/releases)

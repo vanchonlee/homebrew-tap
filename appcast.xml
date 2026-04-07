@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
         <title>Krust Updates</title>
-        <link>https://raw.githubusercontent.com/SlarOps/homebrew-tap/main/appcast.xml</link>
+        <link>https://raw.githubusercontent.com/vanchonlee/homebrew-tap/main/appcast.xml</link>
         <description>Krust — Native Kubernetes IDE for macOS</description>
         <language>en</language>
         <item>
@@ -11,7 +11,7 @@
             <sparkle:version>202603111608</sparkle:version>
             <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.0.1/krust-1.0.1.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.0.1/krust-1.0.1.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="93fxEd+1cZX6IPd0pTVhoiYaFEmCuV/RfeR25Z/M8r+xVb69wofqus8ZyJFAPydg01ohYml/gmnArU/6w1uJCw=="
                        length="17492899" />
@@ -22,7 +22,7 @@
             <sparkle:version>202603111537</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.0/krust-1.0.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.0/krust-1.0.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="G+2HciVy/a8LAowcKK0/+B7Q6E640AARu8caZdveaqDBWx0FmRV9qeAYBoA0kerl7Ok5eQSVlsD0CzU+MqAyCg=="
                        length="17492850" />
@@ -33,7 +33,7 @@
             <sparkle:version>202603112126</sparkle:version>
             <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.0.2/krust-1.0.2.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.0.2/krust-1.0.2.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="oSuHYUF+rGLrFxW6BKtzLQQsGsi1P0c6I+dAG3uAbMaxrwHdWJTa/c6UKGhwytAIuVnp6JMIrJtHwkIEEPUDAQ=="
                        length="17471825" />
@@ -44,7 +44,7 @@
             <sparkle:version>202603192307</sparkle:version>
             <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.1.0/krust-1.1.0.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.1.0/krust-1.1.0.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="B1F6muZdPtoLaQ9/Ns99Y0Npl/RrY1o0yGozm1PA5leQ9cQpbjmNIEuPh7Pm63ABAB/s7EI3UFG89uQdxNa5DA=="
                        length="26352638" />
@@ -55,7 +55,7 @@
             <sparkle:version>202603192329</sparkle:version>
             <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.1.0/krust-1.1.0.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.1.0/krust-1.1.0.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="qu3LqaKje8gPw5N/7kTiVnExQp29OLerM1Vdu7JBRP3pK8u4DKjIAZ4k27eoROtXcCUzNfdE6syXvGmXH+ksDA=="
                        length="26336014" />
@@ -66,7 +66,7 @@
             <sparkle:version>202603200122</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.1.1/krust-1.1.1.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.1.1/krust-1.1.1.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="g3dfh3UBNMo7FC2bKNQBVCmgmkVXdiO/++RsMh68a9mG4t9Y77BF10zxSQI6dG3y1pi3DeWzMPH97sYWMQ0OAQ=="
                        length="26335197" />
@@ -77,7 +77,7 @@
             <sparkle:version>202603260147</sparkle:version>
             <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.1.2/krust-1.1.2.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.1.2/krust-1.1.2.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="n5BptgNAdnOF2TMrtvqmAFMniBzekIwU3UWcp6ypghMoLRYs6wVBzLYhfck229xInQS0EjPNQe+h7P/OrZa8BA=="
                        length="26678099" />
@@ -88,7 +88,7 @@
             <sparkle:version>202603260211</sparkle:version>
             <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.1.2/krust-1.1.2.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.1.2/krust-1.1.2.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="EgHT8PyCP4VHHkNzZjuEa4fEb+RCclYftOQRlSdU4/eLY3F08XuF1H4PAC/57susjHqYFxN57qOaBdoGK1PlAg=="
                        length="26677684" />
@@ -99,7 +99,7 @@
             <sparkle:version>202603290023</sparkle:version>
             <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.2.0/krust-1.2.0.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.2.0/krust-1.2.0.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="oVcN+WArRWfAtQ5oXeZiTzXPo2TtS/Fuip4hAP15kNNJZJjhvZb9vbOyaH8Fr/NWKEZYL1v9LTW1GobFu4zkCA=="
                        length="27013776" />
@@ -110,7 +110,7 @@
             <sparkle:version>202604022332</sparkle:version>
             <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.3.0/krust-1.3.0.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.3.0/krust-1.3.0.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="Sm2BiyqpOu78Yg44a71wt82vLh163nCaxxdKVtzSvpmWg6jbYvsnd4FeDbqf9bg/P0iaRbXPsTXe7H8B4aaWBw=="
                        length="27197511" />
@@ -121,7 +121,7 @@
             <sparkle:version>202604030008</sparkle:version>
             <sparkle:shortVersionString>1.3.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.3.1/krust-1.3.1.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.3.1/krust-1.3.1.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="yMZbHWSzTdRCab+1dz6os3gkNpT44Bm9IIaJiguoi+UMiquQDPvmPtcKzecolgoPJ+CF+9CGDjiDK9DYYqxyBg=="
                        length="27197367" />
@@ -132,7 +132,7 @@
             <sparkle:version>202604061019</sparkle:version>
             <sparkle:shortVersionString>1.3.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/SlarOps/homebrew-tap/releases/download/v1.3.2/krust-1.3.2.dmg"
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.3.2/krust-1.3.2.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="L8KgH4PD3uGtd8iPy9vnhJ0ljUAAI27RYVGcV7PEqGxmTJDZ5oVZHk+aSm1naIY6ThkFVFXavPfphKmyaD6BCQ=="
                        length="27155241" />
