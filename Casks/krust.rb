@@ -1,6 +1,6 @@
 cask "krust" do
-  version "1.3.5"
-  sha256 "1ec1bcb3a548cc00106e148910717a0de8ba267b86b7f03831c4a5386da43ebd"
+  version "1.3.6"
+  sha256 "27a63215a061aacf1e085164549e15dedff51317dc57f7ad87dd8d5804280069"
 
   url "https://github.com/vanchonlee/homebrew-tap/releases/download/v#{version}/krust-#{version}.dmg",
       verified: "github.com/vanchonlee/homebrew-tap/"
@@ -8,7 +8,7 @@ cask "krust" do
   desc "Native Kubernetes IDE for macOS — built with Rust and Swift"
   homepage "https://github.com/vanchonlee/homebrew-tap"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: ">= :sonoma"
 
   app "krust.app"
 
