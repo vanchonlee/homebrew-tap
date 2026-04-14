@@ -181,5 +181,16 @@
                        sparkle:edSignature="jZ2WPejeNluDVMTkUCMPEBNUd5nBEmaHxzRFi5ekscI7do3SoS2GJtSFFRdl/5mbrdz6X2e8iRoSQVEhrvfBBA=="
                        length="27141100" />
         </item>
+        <item>
+            <title>Version 1.3.7</title>
+            <pubDate>Tue, 14 Apr 2026 09:50:08 +0700</pubDate>
+            <sparkle:version>202604140942</sparkle:version>
+            <sparkle:shortVersionString>1.3.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.3.7/krust-1.3.7.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="DFPGCJnwc3eSM10MPMo8J7sBd+Y5JZiUQzxo5FexW1PKLrgIFDew2az7U5dLYgrwPMGusUC0pYMgQoUzEc5yBQ=="
+                       length="27203961" />
+        </item>
     </channel>
 </rss>
