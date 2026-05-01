@@ -214,5 +214,16 @@
                        sparkle:edSignature="oTKlbR18mc6uVB1c+4pwR8KL3iLOXOQnaXNQdpwpi+OMwJoVstebAlw189dV0FXoKLStRD6z3HgtaUCLv/HPAA=="
                        length="28205043" />
         </item>
+        <item>
+            <title>Version 1.3.12</title>
+            <pubDate>Sat, 02 May 2026 01:29:14 +0700</pubDate>
+            <sparkle:version>202605020123</sparkle:version>
+            <sparkle:shortVersionString>1.3.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.3.12/krust-1.3.12.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="9rHJI3hJPXgyxewQipA2/ro+rQsqywGihK5Uc5MBLNjnlA280oUiE7iyPOaG2rDsXqL+mgpo6F6Fuu2NOA+ZDQ=="
+                       length="28167122" />
+        </item>
     </channel>
 </rss>
