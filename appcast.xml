@@ -1026,5 +1026,78 @@ code {
                        sparkle:edSignature="FzhSJZwp+Ie+9ZzzGfgPAAoydrzMjIO1t1vRgS9gXpOG2jwBotAlzqGb564SOe4v4WNya+6TWQzw48tFVgf2DQ=="
                        length="54188494" />
         </item>
+        <item>
+            <title>Version 1.5.9</title>
+            <pubDate>Wed, 16 Sep 2026 00:09:15 +0700</pubDate>
+            <sparkle:version>202609152319</sparkle:version>
+            <sparkle:shortVersionString>1.5.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.5.9</h1>
+<h2>Google Cloud Connections</h2>
+<ul>
+  <li>Sign in again directly from an expired account or resource-table error, preserving the saved Google account and cluster connections.</li>
+  <li>Share one browser sign-in across resource recovery requests, and retry only after successful authentication. Network and permission failures retain the normal Retry action.</li>
+  <li>Organize Connection Center under Google Cloud with the official provider icon, and group managed GKE contexts by project in the context picker.</li>
+  <li>Rename or remove saved Google Cloud connections, and validate required OAuth configuration before building a release.</li>
+</ul>
+<h2>Custom Resource Definitions</h2>
+<ul>
+  <li>Cache definitions per context and show cached definitions immediately when switching clusters, with a five-second background refresh for warm caches.</li>
+  <li>Keep cached definitions visible if refresh fails. Show compact refresh status, last-checked details, and Refresh Now or Retry actions.</li>
+  <li>Refresh definitions immediately on reconnect and reject callbacks from previous contexts or canceled watches.</li>
+</ul>
+<h2>Connection and Interface Reliability</h2>
+<ul>
+  <li>Run Kubernetes connection checks asynchronously so switching contexts does not block sidebar scrolling.</li>
+  <li>Recheck failed connections after five seconds and revalidate when API activity resumes, reducing stale connection warnings.</li>
+  <li>Improve watcher recovery and exact-context routing, including removing a secondary context from a multi-cluster selection.</li>
+  <li>Keep resource table columns stable during resizing and prevent inspector expansion from unnecessarily enlarging the macOS window.</li>
+</ul>
+<h2>Crash Diagnostics</h2>
+<ul>
+  <li>Improve opt-in AppKit exception capture while retaining crash-only privacy settings, and require symbol upload for public release builds.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.9/krust-1.5.9.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="WejjnjXy11Ed8sZMFuyI4AhgL3E5bntjNlezypejx3jN+Ev6vuVWz0a3RhXrqE2vkYbIizutK06E4ZjoPS6ECw=="
+                       length="54269203" />
+        </item>
     </channel>
 </rss>
