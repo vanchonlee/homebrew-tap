@@ -1099,5 +1099,58 @@ code {
                        sparkle:edSignature="WejjnjXy11Ed8sZMFuyI4AhgL3E5bntjNlezypejx3jN+Ev6vuVWz0a3RhXrqE2vkYbIizutK06E4ZjoPS6ECw=="
                        length="54269203" />
         </item>
+        <item>
+            <title>Version 1.6.0</title>
+            <pubDate>Thu, 01 Oct 2026 17:54:19 +0700</pubDate>
+            <sparkle:version>202610011748</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.6.0</h1>
+<h2>Updates</h2>
+<ul>
+  <li>This release includes stability improvements and bug fixes.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.6.0/krust-1.6.0.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="iYujiiuE3h7zkdSh77N7blH/Uu69UjLO6RLs6ZdhTkt127AvBV1p+Ba54/F+L4Y2wzwzcaq22GB1eRbjycovBQ=="
+                       length="56171649" />
+        </item>
     </channel>
 </rss>
