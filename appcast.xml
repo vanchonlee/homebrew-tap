@@ -1152,5 +1152,68 @@ code {
                        sparkle:edSignature="iYujiiuE3h7zkdSh77N7blH/Uu69UjLO6RLs6ZdhTkt127AvBV1p+Ba54/F+L4Y2wzwzcaq22GB1eRbjycovBQ=="
                        length="56171649" />
         </item>
+        <item>
+            <title>Version 1.6.1</title>
+            <pubDate>Fri, 02 Oct 2026 23:41:40 +0700</pubDate>
+            <sparkle:version>202610022336</sparkle:version>
+            <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.6.1</h1>
+<h2>Sidebar</h2>
+<ul>
+  <li>Gateway Classes, Gateways, HTTPRoutes, and GRPCRoutes now appear as their own rows under Networking instead of a toolbar picker.</li>
+  <li>Collapse and expand sidebar sections from their headers. Searching the sidebar keeps every section open so matches are never hidden.</li>
+  <li>Helm now has its own section with a Releases row.</li>
+</ul>
+<h2>Pod Inspector</h2>
+<ul>
+  <li>The header shows the pod phase as text alongside namespace and Pod IP.</li>
+  <li>Sections are ordered for troubleshooting: containers and events first, then metrics and conditions, followed by placement, spec, volumes, and metadata.</li>
+  <li>Pod details are grouped into Placement &amp; Network, Spec, and Metadata, with duplicated fields removed and a Created timestamp added.</li>
+  <li>Container details are easier to scan: reason and message are shown separately, exit codes name the signal (for example <code>137 (SIGKILL)</code>), timestamps use local time with age and run time, and requests and limits appear side by side.</li>
+  <li>Field labels in inspector details now use the secondary label color.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.6.1/krust-1.6.1.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="aacih9MAFco5lGogSmIfgB6XhyYm2rOSJLObbQCJpQB+C6k4lA5lfPmBwkYAr0YAxE5kx/K/Tba+Q8n93X/jBg=="
+                       length="56180745" />
+        </item>
     </channel>
 </rss>
