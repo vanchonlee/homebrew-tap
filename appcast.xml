@@ -1268,5 +1268,73 @@ code {
                        sparkle:edSignature="Zel9Vg++e7vDNr/DfZMCmt1IJd8aSwCbPkLHQSO6UtlzdB1hLsVeuH9e34wQ6N2c5wlVsu4hbNsTDvf+BrmOBg=="
                        length="56385252" />
         </item>
+        <item>
+            <title>Version 1.6.3</title>
+            <pubDate>Mon, 05 Oct 2026 01:28:07 +0700</pubDate>
+            <sparkle:version>202610050122</sparkle:version>
+            <sparkle:shortVersionString>1.6.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.6.3</h1>
+<h2>Multi-cluster</h2>
+<ul>
+  <li>Tables, inspector headers, sorting, and search show the cluster name instead of an internal context ID. Each cluster keeps the same color in every table.</li>
+  <li>Selecting clusters only loads the tab you are viewing, instead of loading every resource kind for every cluster.</li>
+  <li>Adding or removing a cluster keeps the table in place: rows from other clusters stay put, and the table no longer flashes empty or rebuilds.</li>
+  <li>Fixed Pods still showing a cluster after you unchecked it.</li>
+  <li>Fixed Deployments going empty when you went back to a single cluster.</li>
+  <li>The status bar shows &quot;Connecting…&quot; while a newly added cluster connects, on every tab.</li>
+</ul>
+<h2>Delete</h2>
+<ul>
+  <li>The name to type in the delete confirmation is on its own line, so you can select and copy it.</li>
+  <li>The confirmation shows the cluster name for the Context and Protected context lines.</li>
+</ul>
+<h2>Overview</h2>
+<ul>
+  <li>DaemonSets and StatefulSets load when several clusters are selected.</li>
+  <li>DaemonSets and StatefulSets with fewer ready Pods than desired show as Degraded instead of Idle.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.6.3/krust-1.6.3.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="tZ2zUuxiQieA6Lg+rnELUONEtGavFp2UpmpO0LsA3edfM5/7xitQSICslrRBMWs0soadhPH9n3/ZyzhXwiB8CQ=="
+                       length="56410961" />
+        </item>
     </channel>
 </rss>
