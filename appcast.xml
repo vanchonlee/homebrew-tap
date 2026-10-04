@@ -1257,9 +1257,39 @@ code {
 </head>
 <body>
 <h1>Release notes for version 1.6.2</h1>
-<h2>Updates</h2>
+<h2>Delete</h2>
 <ul>
-  <li>This release includes stability improvements and bug fixes.</li>
+  <li>Every resource table supports Delete from the context menu and ⌫.</li>
+  <li>Deleting high-impact resources (Namespaces, CRDs, volumes, workloads, Services, Ingresses, Gateways, Nodes, cluster RBAC, webhooks, and anything in <code>kube-system</code>, <code>kube-public</code>, or <code>kube-node-lease</code>) asks you to type the resource name to confirm. Bulk deletes ask you to type &quot;delete N &lt;kind&gt;&quot;.</li>
+  <li>Mark a context as protected in Settings › Security to require typed confirmation for every delete in it.</li>
+  <li>Deployments, StatefulSets, and DaemonSets offer the cascade mode: delete Pods in the background, wait for Pods to be deleted, or keep Pods running (orphan).</li>
+  <li>Fixed deletes in multi-cluster views hitting the current context instead of the row&#x27;s cluster for PVs, PVCs, PDBs, RBAC, ServiceAccounts, StorageClasses, Endpoints, LimitRanges, ResourceQuotas, NetworkPolicies, and Gateway API resources.</li>
+  <li>Service delete errors are now reported instead of being ignored.</li>
+</ul>
+<h2>Edit YAML</h2>
+<ul>
+  <li>Apply only sends your changes, like <code>kubectl edit</code>. Fields changed on the server in the meantime (for example replicas scaled by an HPA) are no longer reverted; if you edited the same field, you are asked to reload.</li>
+  <li>Edits are marked with the <code>krust.io/edited</code> annotation instead of a label, so selectors and IaC drift checks are unaffected.</li>
+  <li>Prompts before closing or reloading with unapplied changes, and opens one window per resource.</li>
+</ul>
+<h2>Secret and ConfigMap data</h2>
+<ul>
+  <li>Fixed binary Secret values being corrupted on apply. Non-text values are read-only and sent back unchanged.</li>
+  <li>Secret edits are rejected if the Secret changed since the editor opened.</li>
+  <li>Rename keys, see removed keys with undo, and get validation for invalid or duplicate key names.</li>
+  <li>A larger value pane with size and line count, and a wrap toggle (on by default for Secrets).</li>
+</ul>
+<h2>Describe</h2>
+<ul>
+  <li>Describe opens from the right-click menu in its own window with Refresh, and works for more kinds (RBAC, CRDs, custom resources, Namespaces, webhooks).</li>
+  <li>Press <code>d</code> to Describe and <code>e</code> to Edit YAML in every resource table.</li>
+  <li>Context menus show each item&#x27;s key shortcut.</li>
+</ul>
+<h2>Node Inspector</h2>
+<ul>
+  <li>Sections are ordered for troubleshooting: Health, Resources, Pods, Events, then System &amp; Network and metadata.</li>
+  <li>Resources shows usage, requests, and limits against allocatable, plus running Pods against the node&#x27;s Pod limit.</li>
+  <li>Pods are grouped by namespace with CPU and memory columns, and appear instantly instead of after several seconds.</li>
 </ul>
 </body></html>
             ]]></description>
