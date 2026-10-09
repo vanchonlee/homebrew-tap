@@ -1366,5 +1366,91 @@ code {
                        sparkle:edSignature="tZ2zUuxiQieA6Lg+rnELUONEtGavFp2UpmpO0LsA3edfM5/7xitQSICslrRBMWs0soadhPH9n3/ZyzhXwiB8CQ=="
                        length="56410961" />
         </item>
+        <item>
+            <title>Version 1.6.4</title>
+            <pubDate>Fri, 09 Oct 2026 16:51:14 +0700</pubDate>
+            <sparkle:version>202610091641</sparkle:version>
+            <sparkle:shortVersionString>1.6.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.6.4</h1>
+<h2>Connections</h2>
+<ul>
+  <li>Clusters that use short-lived client certificates (for example Teleport) reconnect before the certificate expires, instead of failing with &quot;CertificateExpired&quot; first.</li>
+  <li>Brief network or VPN drops no longer show a warning. The cluster picker shows a warning icon only when a cluster has been unreachable for more than 15 seconds, or right away when you need to act (sign in again, fix the kubeconfig, install an auth plugin).</li>
+  <li>Connection warnings in the cluster picker show as an icon with a plain-language tooltip instead of the raw error.</li>
+</ul>
+<h2>Terminal and Google Cloud (GKE)</h2>
+<ul>
+  <li>GKE clusters added with Google sign-in work in the Krust terminal and in Claude Code sessions started from Krust. <code>kubectl</code> gets its credentials from Krust through <code>krust kube-credential</code>, so no token is written to disk and an expired token is refreshed on the next command.</li>
+  <li>The terminal banner, tab label, and <code>kubectl config current-context</code> show the cluster&#x27;s name.</li>
+  <li>Pod shells for GKE clusters open in Krust&#x27;s built-in terminal even when Terminal.app is selected, because <code>kubectl</code> outside Krust can&#x27;t sign in to them.</li>
+  <li>Claude Code started in the Krust terminal keeps saving transcripts when Krust itself was opened from a Claude Code session.</li>
+</ul>
+<h2>Multi-cluster</h2>
+<ul>
+  <li>Logs, Pod lists in inspectors, and port-forward health checks use the right cluster for every row, not only the primary cluster. This applies to Deployments, StatefulSets, DaemonSets, Jobs, CronJobs, and Nodes.</li>
+  <li>Port forwards on secondary clusters no longer reconnect for no reason.</li>
+  <li>Cluster names replace internal context IDs everywhere: Describe, YAML, log, AI Chat, and port-forward labels, delete confirmations, the command palette, the status bar, Prometheus profiles, compare views, error messages, and AI approval prompts.</li>
+  <li>Fixed deleted Pods staying in the list and protected session clusters not asking for confirmation when several clusters are selected.</li>
+  <li>Pod, Deployment, and StatefulSet details use the Prometheus profile saved for their cluster.</li>
+  <li>Opening a Pod shell in Terminal.app uses the right context when several clusters are selected.</li>
+  <li>Searching Jobs matches the cluster name, like other lists.</li>
+</ul>
+<h2>Logs</h2>
+<ul>
+  <li>Logs of Pods with several containers open without the &quot;a container name must be specified&quot; error. Krust uses the Pod&#x27;s default container, or shows all containers.</li>
+  <li>Deployment, StatefulSet, DaemonSet, Job, and CronJob logs have a container picker.</li>
+  <li>DaemonSets have a Logs action.</li>
+  <li>CronJob logs show the Pods of that CronJob&#x27;s Jobs.</li>
+  <li>The log view shows &quot;Connecting…&quot;, &quot;Waiting for logs…&quot;, or &quot;No log output&quot; instead of an empty table.</li>
+  <li>The log panel keeps its layout when logs are unavailable, for example &quot;No Pods are available for this resource.&quot;</li>
+</ul>
+<h2>Port forward</h2>
+<ul>
+  <li>Services whose target port is a name (for example <code>http</code>) can be port-forwarded, and connect to the right container port.</li>
+  <li>Pods, Deployments, StatefulSets, and DaemonSets have <strong>Custom Port…</strong>, for when the declared ports are missing or wrong.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.6.4/krust-1.6.4.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="y/BhyHVUDiQwJupbPZt/+J8aH/opOLW2QDGQuX1v7dLqsIDZlu+gZQ94RWXb3n3BKXVMuO5KkHachkm1S85sCA=="
+                       length="56443327" />
+        </item>
     </channel>
 </rss>
