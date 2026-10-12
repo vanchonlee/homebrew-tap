@@ -1452,5 +1452,87 @@ code {
                        sparkle:edSignature="y/BhyHVUDiQwJupbPZt/+J8aH/opOLW2QDGQuX1v7dLqsIDZlu+gZQ94RWXb3n3BKXVMuO5KkHachkm1S85sCA=="
                        length="56443327" />
         </item>
+        <item>
+            <title>Version 1.7.0</title>
+            <pubDate>Mon, 12 Oct 2026 15:00:54 +0700</pubDate>
+            <sparkle:version>202610121452</sparkle:version>
+            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.7.0</h1>
+<h2>Google Cloud (GKE)</h2>
+<ul>
+  <li>Google Cloud sign-in is out of the preview. Google verified Krust, so any Google account can sign in, and you no longer have to sign in again every seven days.</li>
+  <li><strong>File → Add Cluster… → Google Cloud</strong> goes straight to Google sign-in, without the Experimental notice.</li>
+  <li>Disconnecting a Google account revokes its access at Google even when its credential is protected by Touch ID. Krust asks for Touch ID if needed, like reconnecting does.</li>
+</ul>
+<h2>Cluster Overview</h2>
+<ul>
+  <li>Workloads show as grids of squares, one square per object, colored by status: Pods are Failing, Starting, Running, or Completed. A square keeps its place when the status changes, and hovering shows the object&#x27;s name and details below the grid.</li>
+  <li>Click a square to open that object in its list, or a legend entry to open the list filtered by that status. Drag cards to rearrange them.</li>
+  <li>CPU and memory show as capacity grids with Used, Requested, and Available, as a share of the cluster&#x27;s allocatable capacity. Completed and failed Pods no longer count toward Requested.</li>
+  <li>Reconnect in the toolbar (⌘R) works on Overview.</li>
+</ul>
+<h2>Search</h2>
+<ul>
+  <li>The toolbar search does one thing at a time, chosen by what you type, like Quick Open in VS Code:</li>
+  <li>plain text or <code>key:value</code> filters the current list</li>
+  <li><code>&gt;</code> goes to a tab</li>
+  <li><code>@</code> switches cluster</li>
+  <li><code>?</code> lists the prefixes</li>
+  <li>⌘K opens it with <code>&gt;</code>, and ⌘F focuses the filter.</li>
+  <li>Plain text in the Pod filter matches Pod names only. Use <code>ns:</code>, <code>status:</code>, <code>node:</code>, or <code>image:</code> for other fields. <code>status:</code> also accepts <code>failing</code>, <code>starting</code>, <code>running</code>, and <code>completed</code>.</li>
+  <li>Switching clusters no longer puts the cursor back in the toolbar search.</li>
+</ul>
+<h2>Workspace</h2>
+<ul>
+  <li>Drag a view from the sidebar onto the workspace to open it in a split. Drop on the right half to split right, or on the bottom half to split down.</li>
+  <li>The toolbar keeps the same buttons on every tab. Buttons that don&#x27;t apply are dimmed instead of disappearing, so switching tabs doesn&#x27;t rearrange the toolbar.</li>
+</ul>
+<h2>Help</h2>
+<ul>
+  <li><strong>Help → Contact Support…</strong> opens an email to support@krust.io with your Krust version.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.7.0/krust-1.7.0.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="+D9INvTVqbmMqiZrS8w+LAuLs/uT0+DPfcwd8BhoH4s0QJLhU0BfsPrm6NQoTrUPx/DCWHamf685YjjeusgAAw=="
+                       length="56657332" />
+        </item>
     </channel>
 </rss>
