@@ -1534,5 +1534,73 @@ code {
                        sparkle:edSignature="+D9INvTVqbmMqiZrS8w+LAuLs/uT0+DPfcwd8BhoH4s0QJLhU0BfsPrm6NQoTrUPx/DCWHamf685YjjeusgAAw=="
                        length="56657332" />
         </item>
+        <item>
+            <title>Version 1.7.1</title>
+            <pubDate>Wed, 14 Oct 2026 04:19:25 +0700</pubDate>
+            <sparkle:version>202610140413</sparkle:version>
+            <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.7.1</h1>
+<h2>macOS 26 (Tahoe)</h2>
+<ul>
+  <li>The cluster, namespace, and Port Forwards pickers in the toolbar stay open. On macOS 26 they could close right after opening, before you could pick anything.</li>
+  <li>The toolbar search is back on macOS 26. The sidebar filter is now its own field at the top of the sidebar.</li>
+</ul>
+<h2>Search and toolbar</h2>
+<ul>
+  <li>Switching tabs or clusters no longer leaves the cursor in the toolbar search, on macOS 27 as well.</li>
+  <li>Each tab keeps its filter, and the search field now shows it when you come back to the tab. Before, the field looked empty while the list was still filtered.</li>
+  <li>Opening an empty or loading tab no longer makes the toolbar flicker. Its color and title stay the same, and Reconnect stays available.</li>
+</ul>
+<h2>Pods</h2>
+<ul>
+  <li>The Ready column counts native sidecar containers (init containers with <code>restartPolicy: Always</code>), like <code>kubectl get pods</code>.</li>
+</ul>
+<h2>Google Cloud (GKE)</h2>
+<ul>
+  <li>Fixed a launch issue where Krust showed your saved Google Cloud cluster while loading resources from your kubeconfig&#x27;s current context.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.7.1/krust-1.7.1.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="+lSh+xJmS1Q1FbfIkzA7S3hxLrcVs4lsOj3NcVLCI+On9AJp7S4KfYccytzCrQ63VAmc54dZq/nlVUvu0JZnDQ=="
+                       length="56507787" />
+        </item>
     </channel>
 </rss>
