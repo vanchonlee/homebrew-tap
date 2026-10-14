@@ -1602,5 +1602,63 @@ code {
                        sparkle:edSignature="+lSh+xJmS1Q1FbfIkzA7S3hxLrcVs4lsOj3NcVLCI+On9AJp7S4KfYccytzCrQ63VAmc54dZq/nlVUvu0JZnDQ=="
                        length="56507787" />
         </item>
+        <item>
+            <title>Version 1.7.2</title>
+            <pubDate>Wed, 14 Oct 2026 15:55:19 +0700</pubDate>
+            <sparkle:version>202610141540</sparkle:version>
+            <sparkle:shortVersionString>1.7.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.7.2</h1>
+<h2>macOS 14 (Sonoma)</h2>
+<ul>
+  <li>The cluster and namespace pickers are back in the toolbar. In 1.7.1 the toolbar could be empty at the default window size. In wider windows the pickers were pushed to the right, and Refresh Metrics, Port Forwards, AI Assistant, Terminal, and Info moved into the » menu.</li>
+  <li>On macOS 14 and 15 the sidebar filter is the system sidebar search again, as in 1.7.0. macOS 26 and later keep the separate sidebar field from 1.7.1.</li>
+</ul>
+<h2>Google Cloud (GKE)</h2>
+<ul>
+  <li>Cancelling Touch ID at launch no longer leaves your Google Cloud clusters stuck on &quot;Restoring…&quot;. Krust asks once, then shows the clusters as Locked in the cluster picker. Click one to unlock it with Touch ID: that account&#x27;s clusters are restored and the one you clicked is selected.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.7.2/krust-1.7.2.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="ehy4jaW8seRr6jsauVUE3GcbTHo3R4IjtSKdG6gM2Rt9Ccuxnhaq+YCqE3iTIDNOEeg8FeoqtOSGB+yEEFY7CA=="
+                       length="56527436" />
+        </item>
     </channel>
 </rss>
