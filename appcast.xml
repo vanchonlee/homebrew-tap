@@ -1660,5 +1660,106 @@ code {
                        sparkle:edSignature="ehy4jaW8seRr6jsauVUE3GcbTHo3R4IjtSKdG6gM2Rt9Ccuxnhaq+YCqE3iTIDNOEeg8FeoqtOSGB+yEEFY7CA=="
                        length="56527436" />
         </item>
+        <item>
+            <title>Version 1.8.0</title>
+            <pubDate>Tue, 27 Oct 2026 14:02:12 +0700</pubDate>
+            <sparkle:version>202610271353</sparkle:version>
+            <sparkle:shortVersionString>1.8.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.8.0</h1>
+<h2>Claude Code replaces the AI Assistant</h2>
+<ul>
+  <li>The in-app AI Assistant is gone. Krust now runs Claude Code in its terminal panel, one session per cluster, using the Claude Code you have installed (<code>claude</code>).</li>
+  <li>The Claude Code button in the toolbar, or ⇧⌘A from any Krust window, opens the cluster&#x27;s session in the panel.</li>
+  <li>On resources (context menus, Pods, the inspector, log windows, Events, Security Audit), <strong>Ask Claude Code…</strong> opens Quick Ask, a floating bar focused on the resource, and <strong>Open in Claude Code</strong> opens the resource&#x27;s session in the terminal.</li>
+  <li>Quick Ask sends your question to the session in the background and shows what Claude is doing, then Done. Show in Terminal opens the whole exchange. A question waits while Claude is working or waiting for you, so it never answers a dialog. Selected log lines can be attached to the question.</li>
+  <li>A Claude session can move to a small window at the bottom right of the Krust window (<strong>Open in Small Window</strong>, or <strong>Open in Window</strong> on its tab). <strong>Attach Back</strong> returns it to the panel; Claude keeps running throughout.</li>
+  <li>Claude sessions get Krust&#x27;s tools: what the window shows, navigation and filters, critical reports, Prometheus, port forwards, and changes to the cluster, which Claude Code asks you about before each call. A session stays on the cluster it was opened for.</li>
+  <li>When <code>kubectl</code> is installed, Claude reads the cluster with <code>kubectl</code>. Krust adds permission rules to the session: reads run without asking, while reading Secrets, changes and <code>exec</code> ask first, and pointing <code>kubectl</code> at another kubeconfig or server is refused.</li>
+  <li><strong>Settings → Claude Code</strong> sets environment variables for Claude sessions started from Krust, one <code>KEY=value</code> per line, stored in the Keychain. It replaces Settings → AI, and the API key saved there is deleted.</li>
+  <li>Krust no longer installs its own Atlassian, Datadog and PagerDuty plugins on macOS. Use Claude Code&#x27;s connectors for these services.</li>
+</ul>
+<h2>Claude Code in the notch</h2>
+<ul>
+  <li>On a MacBook with a notch, Claude Code sessions live in the notch. Hover or click it to list them.</li>
+  <li>While Krust is in the background, the notch opens by itself when a session is working, needs you, or is done, and shows permission requests with Deny and Allow. Allow appears only when the whole request is shown; anything else opens in Krust.</li>
+  <li><strong>Settings → Claude Code → Notch</strong> turns it off, stops it from answering permission requests, or hides prompts, answers and commands.</li>
+</ul>
+<h2>Amazon EKS (Pro)</h2>
+<ul>
+  <li>Connect an AWS account and add its EKS clusters: sign in with an AWS console account (the way <code>aws login</code> does) or with IAM Identity Center. Krust lists your accounts and roles, scans regions for clusters, and verifies each one it adds. Adding more clusters from a connected account needs no new sign-in.</li>
+  <li>Krust refreshes AWS credentials and EKS tokens itself; the AWS CLI is not needed. AWS keys never leave Krust: terminals, <code>kubectl</code> and Claude Code get EKS tokens from Krust, not credentials.</li>
+  <li>When EKS rejects a connection, Diagnose Access asks AWS why: the identity Krust signed in as, the cluster&#x27;s access entries and policies, and the commands an administrator can run to grant access.</li>
+  <li>AWS sign-ins are kept in the Keychain, behind the same Touch ID setting as Google Cloud.</li>
+  <li>The cluster picker groups EKS clusters by AWS account, with the AWS logo.</li>
+</ul>
+<h2>Connection Center</h2>
+<ul>
+  <li>One Connection Center for every provider: Clusters, Accounts and Kubeconfig files, each with a count. Adding a cluster walks the same steps for Google Cloud, AWS and kubeconfig files.</li>
+  <li>The cluster picker lists the clusters you use most first. Each pick counts, and older use fades after a few weeks.</li>
+</ul>
+<h2>Workspace</h2>
+<ul>
+  <li>The shared panel (Claude Code, terminals, logs) can sit on the right of the resources instead of below them. A button on the panel bar moves it, and Krust remembers the choice. ⌃` shows and hides it.</li>
+  <li>Splits slide open and closed. Both panes have the same header, with their namespace and row count, plus Swap Panes, Show Side by Side or Show Top and Bottom, and Close Split. One status bar at the bottom follows the focused pane.</li>
+  <li>The toolbar search keeps the tab&#x27;s filter when you run a ⌘K command or press Esc.</li>
+</ul>
+<h2>Logs</h2>
+<ul>
+  <li>One toolbar: Pause, Source (pod and container), Filter (text, <code>key=value</code> or <code>/regex/</code>, ⌘F), Levels, and a menu for everything else. Detached log windows have the same toolbar.</li>
+  <li>The selected line&#x27;s details float over the table. Double-click or Space opens them, Esc closes them.</li>
+  <li>A histogram of lines over time, split into errors, warnings and the rest, sits above the table. It is off by default; the chart button shows it. Click a bar to jump to its first line.</li>
+  <li>Pause holds new lines back and shows how many arrived, without stopping the stream.</li>
+  <li>Panel tabs shrink to fit and close with ⌘W, a middle click, Close Other Tabs or Close Tabs to the Right.</li>
+  <li>Previous Logs is offered only for containers that have a previous run.</li>
+</ul>
+<h2>Multi-cluster</h2>
+<ul>
+  <li>Turning multi-cluster mode on or off keeps the data of clusters that stay selected instead of loading them again.</li>
+  <li>Persistent Volumes, PVCs, Storage Classes, RBAC, Network Policies, Gateways and the other remaining tabs update live in multi-cluster mode. Before, they listed each cluster once.</li>
+  <li>A watch that briefly loses its context retries instead of stopping.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.8.0/krust-1.8.0.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="31SbyjZONojRmWLSlR2I4PSXDFSyi/UkwlGKQ/jDN2IcZm5nBCfVVUEs7SahUDxm61KaPedM3f/ReeC/1iVxBA=="
+                       length="58543469" />
+        </item>
     </channel>
 </rss>
