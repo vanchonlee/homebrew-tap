@@ -1817,5 +1817,63 @@ code {
                        sparkle:edSignature="i2tHKc+o2wVJ8vyR+EYA+JBZs7JwshGPdO0CUqQPGErDicP6LZ1enuIIY/0gww9AZbg/KtjXdLhmbPHmxM/UAg=="
                        length="57669860" />
         </item>
+        <item>
+            <title>Version 1.8.2</title>
+            <pubDate>Wed, 04 Nov 2026 16:30:48 +0700</pubDate>
+            <sparkle:version>202611041622</sparkle:version>
+            <sparkle:shortVersionString>1.8.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.8.2</h1>
+<h2>Memory</h2>
+<ul>
+  <li>Terminals no longer grow in memory over a long session. Krust now uses SwiftTerm 1.99, which fixes a leak in the terminal emulator that Claude Code, local and pod exec terminals all use.</li>
+</ul>
+<h2>Responsiveness</h2>
+<ul>
+  <li>Krust no longer pauses while Claude Code sessions update. The Claude status and permission hook files are now read in the background instead of on the main thread.</li>
+  <li>Terminals draw with less work on the main thread, so typing and scrolling stay smooth while a busy session prints output.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.8.2/krust-1.8.2.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="Ak69wJAXtk3Ls1tyFvuAC/k8mZYUlMULPpchlUyNM/M0p2c21E/5gBTTSI9+1htNFNFk1Qx6TNTeRrLNGsYzDA=="
+                       length="58272762" />
+        </item>
     </channel>
 </rss>
