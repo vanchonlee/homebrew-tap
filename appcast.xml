@@ -1875,5 +1875,70 @@ code {
                        sparkle:edSignature="Ak69wJAXtk3Ls1tyFvuAC/k8mZYUlMULPpchlUyNM/M0p2c21E/5gBTTSI9+1htNFNFk1Qx6TNTeRrLNGsYzDA=="
                        length="58272762" />
         </item>
+        <item>
+            <title>Version 1.8.3</title>
+            <pubDate>Sat, 14 Nov 2026 16:41:37 +0700</pubDate>
+            <sparkle:version>202611141602</sparkle:version>
+            <sparkle:shortVersionString>1.8.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.8.3</h1>
+<h2>Port forwarding</h2>
+<ul>
+  <li>Port forwards to gRPC services no longer stop after a few minutes with a &quot;write: broken pipe&quot; error. When the app in the pod closed one connection, Krust treated it as a failure of the whole forward. Now only that connection closes and the forward keeps running.</li>
+  <li>When the pod resets a forwarded connection, the local client now finds out at once. Before, a client could keep sending data to a connection that was already gone.</li>
+</ul>
+<h2>Services</h2>
+<ul>
+  <li>Open a Service in the browser from its context menu. Krust starts a port forward (or reuses one already running) and opens the page once the forward is ready. If the Service has Teleport app annotations (<code>teleport.dev/port</code>, <code>teleport.dev/protocol</code>, <code>teleport.dev/path</code>, <code>teleport.dev/name</code>), Krust uses them to choose the port, scheme and path. Otherwise it picks the most likely web port.</li>
+  <li>The Ports column and other chip columns now show as many chips as fit the column width, plus a &quot;+N&quot; chip for the rest. Before, ports were cut off at the default width. Chips refit when you resize the column or window.</li>
+</ul>
+<h2>Security</h2>
+<ul>
+  <li>Saved Google Cloud and AWS credentials now live in the data protection keychain. Keychain only gives them to Krust, so other apps and the <code>security</code> command can no longer read them. Existing credentials move over the first time Krust reads them, so you stay signed in.</li>
+  <li>With &quot;Require Touch ID to use saved Google Cloud and AWS credentials&quot; turned on, Keychain itself requires Touch ID or your login password. Krust asks once per launch, so background token refresh never prompts.</li>
+  <li>Updated Rust dependencies with security advisories, including rustls, rustls-webpki and tokio.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.8.3/krust-1.8.3.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="488TaWZoXtbiBQ73NxEvV5R5JKRS39wnatawmc1gCu5v+xDkj3FVRRhYL8gqwhVaKNVjaMSuqndGKZKNhm12Cw=="
+                       length="58264145" />
+        </item>
     </channel>
 </rss>
