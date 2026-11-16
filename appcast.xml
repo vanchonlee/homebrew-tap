@@ -1940,5 +1940,63 @@ code {
                        sparkle:edSignature="488TaWZoXtbiBQ73NxEvV5R5JKRS39wnatawmc1gCu5v+xDkj3FVRRhYL8gqwhVaKNVjaMSuqndGKZKNhm12Cw=="
                        length="58264145" />
         </item>
+        <item>
+            <title>Version 1.9.0</title>
+            <pubDate>Tue, 17 Nov 2026 05:28:50 +0700</pubDate>
+            <sparkle:version>202611170520</sparkle:version>
+            <sparkle:shortVersionString>1.9.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<style>
+:root { color-scheme: light dark; }
+body { font: -apple-system-body; margin: 0; padding: 4px 6px; }
+p { margin: 0 0 10px; }
+.note { padding: 8px 10px; border-radius: 6px; background: rgba(255, 196, 0, 0.16); }
+h2 { font: -apple-system-headline; margin: 14px 0 4px; }
+h2:first-of-type { margin-top: 4px; }
+ul { margin: 0 0 0 1.2em; padding: 0; }
+li { margin: 4px 0; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+a { color: LinkText; }
+.more { margin-top: 14px; }
+</style>
+</head>
+<body>
+<h2>Claude Code and your clusters</h2>
+<ul>
+  <li>Claude Code tabs on GKE and EKS reach the cluster through Krust, so the tab never holds the cluster credential.</li>
+  <li>Choose <strong>Read-only</strong>, <strong>Ask</strong> or <strong>Write</strong> in the bar above the tab, or Write for 15 minutes; in Ask, each change waits for your answer.</li>
+  <li>In Read-only and Ask, Secret values read as <code>&lt;hidden by Krust&gt;</code>, while their keys, sizes and metadata stay real.</li>
+  <li>Impersonation and <code>kubectl proxy</code> are refused in every mode.</li>
+  <li>In Ask, <code>kubectl patch secret --type=json</code> and a <code>helm rollback</code> of a chart with Secrets need Write.</li>
+</ul>
+<h2>Quick Ask</h2>
+<ul>
+  <li>Claude&#x27;s answer now appears in a card in a corner of the Krust window, where you can also allow or deny its requests.</li>
+  <li>Drag the card or the corner terminal anywhere; double-click its header to put it back.</li>
+  <li>&quot;Ask Claude Code…&quot; is now <strong>Ask Claude…</strong>, and &quot;Open in Claude Code&quot; is now <strong>Start a Side Chat</strong>.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+  <li>A Krust terminal&#x27;s cluster credential is now served only to that terminal&#x27;s own processes.</li>
+  <li>Adding a GKE cluster no longer leaves other open clusters on the same account with an expiring token.</li>
+  <li>A context in an additional kubeconfig file now works when <code>~/.kube/config</code> is missing.</li>
+  <li>Opening a session from the Dynamic Island stops the island asking about requests you answer in the terminal.</li>
+  <li>Krust&#x27;s <code>stop_port_forward</code> tool works again, and <code>list_port_forwards</code> reports live traffic.</li>
+</ul>
+<p class="more"><a href="https://krust.io/docs/changelog/">Full release notes</a></p>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.9.0/krust-1.9.0.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="9/icBJtVE+u6XRgDvzAeUfjOi73nI6kOYX1F8OiOYzbQRqCDfLdq+BuVxwm74kLL/cd5mR59BD85DzozWmURCA=="
+                       length="59070644" />
+        </item>
     </channel>
 </rss>
