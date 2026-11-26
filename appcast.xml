@@ -1998,5 +1998,63 @@ a { color: LinkText; }
                        sparkle:edSignature="9/icBJtVE+u6XRgDvzAeUfjOi73nI6kOYX1F8OiOYzbQRqCDfLdq+BuVxwm74kLL/cd5mR59BD85DzozWmURCA=="
                        length="59070644" />
         </item>
+        <item>
+            <title>Version 1.10.0</title>
+            <pubDate>Thu, 26 Nov 2026 11:09:08 +0700</pubDate>
+            <sparkle:version>202611261059</sparkle:version>
+            <sparkle:shortVersionString>1.10.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<style>
+:root { color-scheme: light dark; }
+body { font: -apple-system-body; margin: 0; padding: 4px 6px; }
+p { margin: 0 0 10px; }
+.note { padding: 8px 10px; border-radius: 6px; background: rgba(255, 196, 0, 0.16); }
+h2 { font: -apple-system-headline; margin: 14px 0 4px; }
+h2:first-of-type { margin-top: 4px; }
+ul { margin: 0 0 0 1.2em; padding: 0; }
+li { margin: 4px 0; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+a { color: LinkText; }
+.more { margin-top: 14px; }
+</style>
+</head>
+<body>
+<p class="note">Saved port forwards no longer start on their own when Krust opens. Pro users get a notice that offers to reopen last session&#x27;s forwards, and <strong>Start All Saved</strong> in Port Forwards starts them at any time.</p>
+<h2>Claude Code and your clusters</h2>
+<ul>
+  <li>Claude Code tabs on kubeconfig contexts now go through Krust&#x27;s proxy too, so Read-only, Ask and Write apply there as they do on GKE and EKS.</li>
+  <li>The bar above a Claude tab says where the cluster&#x27;s credential is kept, and warns when a file on this Mac reaches the cluster without Krust.</li>
+  <li><strong>Protect</strong> a cluster from its Claude tab: your deletes then need the name typed, and Claude tabs open in Ask and can&#x27;t stay in Write.</li>
+  <li><strong>Cluster enforcement</strong>, free during early access: set up a protected cluster so Claude&#x27;s requests reach it as <code>krust-agent</code>, a smaller RBAC user, then let Krust verify it. <a href="https://krust.io/docs/claude-code-cluster-enforcement/">How it works</a></li>
+  <li>Settings &gt; Security lists the gcloud, AWS and kubeconfig credentials on this Mac that reach a cluster without Krust.</li>
+</ul>
+<h2>Port forwards and Local Routing</h2>
+<ul>
+  <li><strong>Forward All Pods</strong> (Pro) forwards every pod of a StatefulSet or headless Service on its own <code>&lt;pod&gt;.&lt;service&gt;.&lt;namespace&gt;.svc</code> name, for clustered apps such as Kafka and MongoDB.</li>
+  <li>A Deployment or StatefulSet forward now gets the name of the Service that selects its pods, and the list shows the address a client connects to.</li>
+  <li>Short <code>&lt;service&gt;.&lt;namespace&gt;.svc</code> names now resolve on your Mac, including when it uses encrypted DNS, after an optional last setup step.</li>
+  <li>Local Routing setup is now four guided steps in one card, and continues on its own once you turn on the extension.</li>
+  <li>A forward whose session ended shows <strong>Disconnected</strong> with Reconnect, and a failed one shows the reason with Retry.</li>
+  <li>A first-run welcome introduces Local Routing; <strong>Help &gt; Welcome to Krust</strong> opens it again.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+  <li>Drag anywhere on the bar of the bottom panel to resize it; the line above the bar was too thin to grab.</li>
+</ul>
+<p class="more"><a href="https://krust.io/docs/changelog/">Full release notes</a></p>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.10.0/krust-1.10.0.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="kSiPbnEAB1MtyCLSxe9Nf0VMfC+3JRWokTPhpvw7ponuLYIPIHE64h7bkuUrp3hUVpVkrlOXeTdH4bcKC71hAw=="
+                       length="59734816" />
+        </item>
     </channel>
 </rss>
